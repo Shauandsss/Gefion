@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Python - jQuery Example</title>
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        $(function()
+        {
+            $.ajax({
+                url: "http://127.0.0.1:5500/pieces--%20PYData/PYData.py",
+                method: "GET",
+                datatype: "text",           
+                success: function(response){
+                        $("#div").html(response);
+                        console.log("OK"); 
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+</body>
+</html>
