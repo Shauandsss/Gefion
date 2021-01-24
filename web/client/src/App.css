@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.table {
+  display:inline-block;
+  
+  border-collapse: collapse;
+}
+
+
+.table th, td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 60%;
+}
+
+
+.table th{
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.table td{
+  width: 10%;
+  text-align: left;
+  background-color: seashell;
+}
+
+.mainTable {
+  width:80%;
+}

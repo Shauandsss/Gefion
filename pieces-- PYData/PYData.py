@@ -3,7 +3,6 @@ import urllib.request
 import numpy as np
 from urllib.error import HTTPError
 import pymysql
-#from datetime import date
 from datetime import datetime
 
 con = pymysql.connect(host="127.0.0.1", user="root", passwd="", db="user_gefion")
@@ -23,7 +22,6 @@ def att_indice(index):
             tabela = (pd.read_html(url, decimal=',', thousands='.')[0])[:-1]
             break
         except HTTPError as e:
-
             break
     Group_ID = index
     Date = datetime.today().strftime("%Y/%m/%d")
