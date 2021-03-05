@@ -1,0 +1,41 @@
+.loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 120px;
+    margin-left: 45%;
+  }
+
+.loader span {
+    position: absolute;
+    top: calc(10px * var(--i));
+    left: calc(10px * var(--i));
+    bottom: calc(10px * var(--i));
+    right: calc(10px * var(--i));
+    border: 10px solid #333;
+    border-left: 10px solid white;
+    border-top: 10px solid white;
+    border-radius: 50%;
+    filter: hue-rotate(calc(45deg*var(--i)));
+    animation: rotate ease-in-out 1s infinite;
+    animation-delay: calc(-0.1s * var(--i));
+  }
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+  
+.loader_0 {
+    --i:0
+}
+.loader_1 {
+    --i:1
+}
+.loader_2 {
+    --i:2
+}

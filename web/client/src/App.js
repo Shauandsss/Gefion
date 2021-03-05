@@ -1,103 +1,104 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Axios from 'axios'
-import CanvasJSReact from './chart/canvasjs.react';
-import Chart from './components/Chart'
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-function App () {
+import ChartPie from './components/Chart Pie'
+import ChartLine from './components/Chart Line'
+import Options from './components/options/'
+import Api from './api'
+import BasicTable from './components/IndianTable/BasicTable'
+import Header from './components/Header'
+import LoadCircle from './components/LoadCircle'
+import News from './components/News'
+import Footer from './components/Footer'
+import NewsPage from './components/News--Page'
 
-  const[movieName, setMovieName] = useState('')
-  const[review, setReview] = useState('')
-  const[movieReviewList, setMovieList] = useState([])
+// eslint-disable-next-line import/no-anonymous-default-export
+export default () => {
+  const [listFunds, setListFunds] = useState({})
+  const [listValues, setlistValues] = useState({})
+  const [Funds, setFunds] = useState({})
+  const [blackHeader, setBlackHeader] = useState(false)
+  const [newsList, setNewsList] = useState({})
+  const [newsContent, setNewsContent] = useState({})
 
-  const[newReview, setNewReview] = useState('')
 
-  useEffect(()=>{
-    Axios.get('http://localhost:3001/api/get').then((response)=>{
-      setMovieList(response.data)
-    })
+  useEffect (() => {
+    const loadAll = async () => {
+      let list = await Api.getFullList();
+      setListFunds(list)
+      let FundsFull = await Api.getFullFunds();
+      setFunds(FundsFull)
+      let ValuesFull = await Api.getFullValues();
+      setlistValues(ValuesFull)
+      let newsListApi = await Api.getNews();
+      setNewsList(newsListApi)
+    }
+    loadAll();
+  }, [])
+  
+  useEffect(() => {
+    const scrollListener = () => {
+      if(window.scrollY > 100){
+        setBlackHeader(true);
+      } else {  
+        setBlackHeader(false);
+      }
+    }
+    
+    window.addEventListener('scroll', scrollListener)
+    return () => {
+      window.removeEventListener('scroll', scrollListener)
+    }
   }, [])
 
-  
-  
+  return(
+      <Router>
+        <div className="App">
 
-
-
-
-const formatDate = (date) => {
-    var d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
-
-    if (month.length < 2) month = '0' + month;
-    if (day.length < 2) day = '0' + day;
-
-    return [day, month, year].join('/');
-  }
-
-  /*constructor(){
-    super();
-    this.state = {
-      chartData:{}
-    }
-  }*/
-
-  return ( 
-    <div className="App">
-      <h1> INDEXES </h1>  
-      <Chart/>
-       <div className="mainTable"> 
-        <table className="table">
-          <tr>
-            <th className="Group_ID">Group_ID</th>
-            <th className="ID">ID</th>
-            <th className="Date">Date</th>
-            <th className="Quant">Quantity</th>
-            <th className="Part">Part</th>
-          </tr>
+          <Route path="*" render={(props) => <Header className="Header--Main" black={blackHeader} {...props} /> } />
           
-          {movieReviewList.map((val)=> {
-            return (<tr>
-              <td className="Group_ID">{val.Group_ID}</td>
-              <td className="ID">{val.ID}</td>
-              <td className="Date">{formatDate(val.Date)}</td>  
-              <td className="Qunt">{val.Quantity}</td>  
-              <td className="Part">{val.Part.toFixed(3)}</td>  
-              </tr>)
-          })}
-          
-          </table>
+          {/* Inicio Indexes */}
+          <Route path="/indexes" className="Graphs">
+          <div className="Graphs">
+            <Route exact path="/indexes" render={(props) => <Options className="Graphs--Option" data={listFunds} {...props} /> } />
+            {Funds.length >= 0 && <Route exact path="/indexes" render={(props) => <ChartPie className="Graphs--Pie" data={Funds} {...props} /> } />}
+            <div className="Main--Graphs--Line"> 
+              {listValues.length !== undefined &&<Route exact path="/indexes" render={(props) => <ChartLine className="Graphs--Line" data={listValues} {...props} /> }/>  } 
+              {listValues.length === undefined &&<Route exact path="/indexes" render={(props) => <LoadCircle {...props} /> }/>}
+            </div>
+          </div>
+          </Route>
+        {Funds.length >= 0 &&<Route exact path="/indexes" render={(props) => <BasicTable data={Funds} {...props} /> } />} 
+        {listValues.length === undefined &&<Route exact path="/indexes" render={(props) => <LoadCircle {...props} /> }/>}
+        {/* Fim Indexes */}
+
+        {/* Inicio News */}
+        {newsList.length !== undefined && <Route exact path="/News" render={(props) => <News data={newsList} {...props} /> } />}
+
+
+        {/* Fim News */}
+
+        {newsList.length !== undefined && newsList.map((val)=> {
+          return (
+          <Route exact path={`/News/${val.Id}`} render={(props) => 
+          <NewsPage Id={val.Id} 
+                Title={val.Title} 
+                Subtitle={val.SubTitle} 
+                Content={val.Content} 
+                Img={val.Img_Src} 
+                DatePost={val.Date_Post} 
+                WhoPosted={val.Who_Post} {...props} /> } />)
+        })}
+
+        <Route path="*" render={(props) => <Footer {...props} /> } />
+        
+       
+        
+        
+
         </div>
-    </div>
-  
-  
-  /*
-  const submitReview = () => {
-    Axios.post('http://localhost:3001/api/insert', {
-      movieName: movieName, 
-      movieReview: review
-    })
-      
-    setMovieList([
-      ...movieReviewList,
-        {movieName: movieName, movieReview: review},
-      ])
-  }*/
+      </Router>
+  )
+}
 
- /* const deleteReview = (movie) => {
-    Axios.delete(`http://localhost:3001/api/delete/${movie}`)
-  }
-
-  const updateReview = (movie) => {
-    Axios.put('http://localhost:3001/api/update', {
-      movieName: movie, 
-      movieReview: newReview
-    })
-    setNewReview('')
-  }
-*/
-  
-  );
-} 
-export default App;

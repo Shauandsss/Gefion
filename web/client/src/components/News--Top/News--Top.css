@@ -1,0 +1,49 @@
+
+
+.Main {
+    margin-top: 70px;
+    height: 80vh;
+    margin-bottom: 30px;
+    margin-right: -40px;
+}
+.Main--vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, var(--c5) 10%, transparent 50%)
+}
+
+.Main--horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, var(--c5) 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+}
+
+.Main--Image{
+    object-fit: cover;
+    width: 130%;
+    margin-left: 50%;
+    margin-right: -10%;
+    opacity: 0.6;
+}
+.Main--Title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--c2);   
+    text-align: left;
+    max-width: 60%;
+}
+.Main--Subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: var(--c1);   
+    text-align: left;
+    max-width: 30%;
+    margin-top: 10px;
+}

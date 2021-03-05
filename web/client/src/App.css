@@ -1,33 +1,109 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "./components/Design/Colors.css"; 
+:root{
+  --c1: #DDBEA8;
+  --c2: #F3DFC1;
+  --c3: #368F8B;
+  --c4: #246A73;
+  --c5: #131210;
+}
+* {
+  box-sizing: border-box;
+}
+body {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  background: var(--c5); 
+  margin: 0px 40px 0px 40px;
+ }
+
+.Graphs {
+  background-color: rgba(255,255,255,0.30);
+  border: 7px solid rgba(255,255,255,0.60);
+  border-radius: 30px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin: 70px 20px 30px 10px;
+  padding: 30px 10px 10px 10px;
+  width: 99%;
+  height: 75vh;
+  position: relative;
+}
+.Graphs--Option {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 16px;
+}
+.Graphs--Pie {
+  position: absolute !important;
+  margin: 0px !important;
+  width: 50%;
+  margin-top: 2% !important;
+  margin-left: -10% !important;
 }
 
-.table {
-  display:inline-block;
-  
-  border-collapse: collapse;
+
+.Main--Graphs--Line {
+  position: absolute !important;
+  margin: 0px !important;
+  width: 75%;
+  margin-top: 0px !important;
+  margin-left: 25% !important;
 }
 
-
-.table th, td {
-  border: 1px solid black;
-  padding: 5px;
-  width: 60%;
+.Graphs--Line {
+  position: relative;
+  margin: 0px !important;
+  width: 70%;
+  margin-top: 10px !important;
+  margin-left: 20% !important;
+  color: rgba(0,0,255,1) !important;
 }
 
-
-.table th{
-  text-align: center;
-  background-color: antiquewhite;
+.Graphs--loader {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-top: 120px;
+  margin-left: 45%;
 }
 
-.table td{
-  width: 10%;
-  text-align: left;
-  background-color: seashell;
+.Graphs--loader span {
+  position: absolute;
+  top: calc(10px * var(--i));
+  left: calc(10px * var(--i));
+  bottom: calc(10px * var(--i));
+  right: calc(10px * var(--i));
+  border: 10px solid #333;
+  border-left: 10px solid white;
+  border-top: 10px solid white;
+  border-radius: 50%;
+  filter: hue-rotate(calc(45deg*var(--i)));
+  animation: rotate ease-in-out 1s infinite;
+  animation-delay: calc(-0.1s * var(--i));
 }
 
-.mainTable {
-  width:80%;
+@keyframes rotate{
+  from {
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+
+.Graphs--loader_0 {
+  --i:0
+}
+.Graphs--loader_1 {
+  --i:1
+}
+.Graphs--loader_2 {
+  --i:2
+}
+
+@media (max-width:760px) {
+  body {
+      padding: 2% !important;
+      margin: 0% !important;
+  }
 }

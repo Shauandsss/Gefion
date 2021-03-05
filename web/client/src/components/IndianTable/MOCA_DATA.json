@@ -1,0 +1,487 @@
+[{
+    "Group_ID": "IBOV",
+    "ID": "VALE3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 2837320141,
+    "Part": 12.107000000000001
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ITUB4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 4757466114,
+    "Part": 5.9510000000000005
+}, {
+    "Group_ID": "IBOV",
+    "ID": "PETR4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 4566457037,
+    "Part": 5.8260000000000005
+}, {
+    "Group_ID": "IBOV",
+    "ID": "B3SA3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1930877944,
+    "Part": 5.479
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BBDC4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 4261649634,
+    "Part": 4.898
+}, {
+    "Group_ID": "IBOV",
+    "ID": "PETR3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 3307982840,
+    "Part": 4.272
+}, {
+    "Group_ID": "IBOV",
+    "ID": "MGLU3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 2668955512,
+    "Part": 3.1689999999999996
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ABEV3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 4355174839,
+    "Part": 2.9530000000000003
+}, {
+    "Group_ID": "IBOV",
+    "ID": "WEGE3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 741148001,
+    "Part": 2.8760000000000003
+}, {
+    "Group_ID": "IBOV",
+    "ID": "GNDI3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 588176771,
+    "Part": 2.6180000000000003
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ITSA4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 4515538171,
+    "Part": 2.1719999999999997
+}, {
+    "Group_ID": "IBOV",
+    "ID": "SUZB3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 724921241,
+    "Part": 2.171
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BBAS3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1283197221,
+    "Part": 1.973
+}, {
+    "Group_ID": "IBOV",
+    "ID": "NTCO3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 841083922,
+    "Part": 1.9369999999999998
+}, {
+    "Group_ID": "IBOV",
+    "ID": "RENT3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 592069308,
+    "Part": 1.861
+}, {
+    "Group_ID": "IBOV",
+    "ID": "JBSS3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1500315048,
+    "Part": 1.744
+}, {
+    "Group_ID": "IBOV",
+    "ID": "LREN3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 785417914,
+    "Part": 1.47
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BPAC11",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 263871572,
+    "Part": 1.367
+}, {
+    "Group_ID": "IBOV",
+    "ID": "RADL3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1072645150,
+    "Part": 1.235
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BRDT3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1164958126,
+    "Part": 1.186
+}, {
+    "Group_ID": "IBOV",
+    "ID": "RAIL3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1218081171,
+    "Part": 1.18
+}, {
+    "Group_ID": "IBOV",
+    "ID": "UGPA3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1087056490,
+    "Part": 1.177
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BBDC3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1147260246,
+    "Part": 1.161
+}, {
+    "Group_ID": "IBOV",
+    "ID": "VVAR3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1595083594,
+    "Part": 1.101
+}, {
+    "Group_ID": "IBOV",
+    "ID": "GGBR4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 995903643,
+    "Part": 1.085
+}, {
+    "Group_ID": "IBOV",
+    "ID": "EQTL3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1010286085,
+    "Part": 1.07
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CSNA3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 642398790,
+    "Part": 1.0090000000000001
+}, {
+    "Group_ID": "IBOV",
+    "ID": "KLBN11",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 788757519,
+    "Part": 1.008
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ENEV3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 287844670,
+    "Part": 0.973
+}, {
+    "Group_ID": "IBOV",
+    "ID": "VIVT3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 444219852,
+    "Part": 0.958
+}, {
+    "Group_ID": "IBOV",
+    "ID": "LAME4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 843325974,
+    "Part": 0.9390000000000001
+}, {
+    "Group_ID": "IBOV",
+    "ID": "HAPV3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1085256490,
+    "Part": 0.89
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BBSE3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 671584841,
+    "Part": 0.856
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BRFS3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 811759800,
+    "Part": 0.851
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BTOW3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 201549295,
+    "Part": 0.769
+}, {
+    "Group_ID": "IBOV",
+    "ID": "TOTS3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 480228410,
+    "Part": 0.664
+}, {
+    "Group_ID": "IBOV",
+    "ID": "AZUL4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 327283207,
+    "Part": 0.662
+}, {
+    "Group_ID": "IBOV",
+    "ID": "SANB11",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 355666691,
+    "Part": 0.649
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BRAP4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 222075664,
+    "Part": 0.638
+}, {
+    "Group_ID": "IBOV",
+    "ID": "PCAR3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 157635935,
+    "Part": 0.627
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CMIG4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 969723092,
+    "Part": 0.623
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CCRO3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1115695556,
+    "Part": 0.618
+}, {
+    "Group_ID": "IBOV",
+    "ID": "HYPE3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 410147968,
+    "Part": 0.614
+}, {
+    "Group_ID": "IBOV",
+    "ID": "SBSP3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 339999111,
+    "Part": 0.613
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ENGI11",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 250679709,
+    "Part": 0.5770000000000001
+}, {
+    "Group_ID": "IBOV",
+    "ID": "EGIE3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 254792279,
+    "Part": 0.521
+}, {
+    "Group_ID": "IBOV",
+    "ID": "TIMS3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 808485985,
+    "Part": 0.505
+}, {
+    "Group_ID": "IBOV",
+    "ID": "SULA11",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 279572852,
+    "Part": 0.504
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CSAN3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 129314042,
+    "Part": 0.502
+}, {
+    "Group_ID": "IBOV",
+    "ID": "PRIO3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 135160900,
+    "Part": 0.49700000000000005
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ELET3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 358018408,
+    "Part": 0.48200000000000004
+}, {
+    "Group_ID": "IBOV",
+    "ID": "YDUQ3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 300483575,
+    "Part": 0.455
+}, {
+    "Group_ID": "IBOV",
+    "ID": "QUAL3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 283467789,
+    "Part": 0.413
+}, {
+    "Group_ID": "IBOV",
+    "ID": "LCAM3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 323763077,
+    "Part": 0.40399999999999997
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CPLE6",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 128297543,
+    "Part": 0.395
+}, {
+    "Group_ID": "IBOV",
+    "ID": "FLRY3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 303800430,
+    "Part": 0.385
+}, {
+    "Group_ID": "IBOV",
+    "ID": "IRBR3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1255327516,
+    "Part": 0.38299999999999995
+}, {
+    "Group_ID": "IBOV",
+    "ID": "COGN3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1847994874,
+    "Part": 0.375
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BRML3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 843728684,
+    "Part": 0.373
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CYRE3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 281154098,
+    "Part": 0.36700000000000005
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CRFB3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 391758726,
+    "Part": 0.35
+}, {
+    "Group_ID": "IBOV",
+    "ID": "GOAU4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 693699918,
+    "Part": 0.344
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BRKM5",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 264640575,
+    "Part": 0.344
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ELET6",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 242977127,
+    "Part": 0.335
+}, {
+    "Group_ID": "IBOV",
+    "ID": "TAEE11",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 218568274,
+    "Part": 0.326
+}, {
+    "Group_ID": "IBOV",
+    "ID": "USIM5",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 513729947,
+    "Part": 0.324
+}, {
+    "Group_ID": "IBOV",
+    "ID": "EMBR3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 736143105,
+    "Part": 0.322
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CPFE3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 187714249,
+    "Part": 0.285
+}, {
+    "Group_ID": "IBOV",
+    "ID": "MULT3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 276848567,
+    "Part": 0.271
+}, {
+    "Group_ID": "IBOV",
+    "ID": "MRVE3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 298796441,
+    "Part": 0.27
+}, {
+    "Group_ID": "IBOV",
+    "ID": "MRFG3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 368864634,
+    "Part": 0.242
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ENBR3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 250403441,
+    "Part": 0.222
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CIEL3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 1112196638,
+    "Part": 0.205
+}, {
+    "Group_ID": "IBOV",
+    "ID": "EZTC3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 95756217,
+    "Part": 0.166
+}, {
+    "Group_ID": "IBOV",
+    "ID": "GOLL4",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 137725788,
+    "Part": 0.161
+}, {
+    "Group_ID": "IBOV",
+    "ID": "CVCB3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 172756818,
+    "Part": 0.156
+}, {
+    "Group_ID": "IBOV",
+    "ID": "IGTA3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 85796919,
+    "Part": 0.138
+}, {
+    "Group_ID": "IBOV",
+    "ID": "BEEF3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 239331676,
+    "Part": 0.102
+}, {
+    "Group_ID": "IBOV",
+    "ID": "HGTX3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 126186408,
+    "Part": 0.10099999999999999
+}, {
+    "Group_ID": "IBOV",
+    "ID": "ECOR3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 171109276,
+    "Part": 0.099
+}, {
+    "Group_ID": "IBOV",
+    "ID": "JHSF3",
+    "Date": "2021-02-09T08:00:00.000Z",
+    "Quantity": 288952690,
+    "Part": 0.099
+}]

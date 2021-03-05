@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+.News {
+    margin-top: 100px;
+    font-family: 'Roboto', 'sans-serif';
+    color: var(--c2);
+    padding: 0% 15% 0% 15%;
+}
+
+.News--Img {
+    object-fit: cover;
+    width: 70%;
+    height: 40vh;
+    position: relative;
+    border: 1px var(--c1) solid;
+    margin-top: 50px;
+}
+
+.News--ContentTop {
+    width:100%;
+    
+}
+
+.line{
+    width: 100%;
+    border-bottom: 1px solid var(--c1);
+    margin: 10px;
+}
+    
+.News--Title {
+    font-size: 48px;
+}
+
+.News--Subtitle {
+    font-size: 28px;
+    text-align: justify;
+}
+
+.News--ContentTitle {
+    font-size: 30px;
+    font-weight:bold;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.News--Content { 
+    display: flex;
+    font-size: 18px;
+    text-align: justify;
+    padding: 22px;
+    margin: 0px 20px 0px 20px;  
+}
+
+.News--Credits {
+    display: inline-flex;
+    margin-top: 30px;
+    width: 100%;
+}

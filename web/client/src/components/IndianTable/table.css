@@ -1,0 +1,49 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  color: white;
+  margin: 20px 20px 20px 20px;
+  border-radius: 20px;
+}
+
+thead,tfoot {
+  background-color: rgba(0,0,0,0.6);
+  
+}
+
+td, th, tfoot td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.4);
+}
+
+table input {
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px
+}
+
+table th {
+  text-align: center;
+}
+
+table span {
+  padding-left: 40%;
+}
+
+.Table--Filter {
+  margin-right: 100%;
+}
+
+.table tr:last-child td:last-child{
+  border-bottom-right-radius: 20px;
+}
+
+.table tr:last-child td:first-child{
+  border-bottom-left-radius: 20px;
+}

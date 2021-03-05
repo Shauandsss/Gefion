@@ -15,12 +15,46 @@ app.use(cors())
 app.use(express.json())
 app.use(bodyParser.urlencoded({extented:true}))
 
-app.get('/api/get', (req, res)=>{
-    const sqlSelect = "SELECT * FROM STOCKS_QUANTITY WHERE GROUP_ID = 'IBOV' ORDER BY PART DESC"
-    db.query(sqlSelect, (err, result)=> {
+app.get('/api/get/index/:groupid', (req, res)=>{
+    const groupid = req.params.groupid
+    const sqlSelect = "SELECT * FROM STOCKS_QUANTITY A WHERE A.GROUP_ID = ? AND A.DATE = (SELECT MAX(Z.DATE) FROM STOCKS_QUANTITY Z WHERE Z.GROUP_ID = A.GROUP_ID) ORDER BY A.PART DESC"
+    db.query(sqlSelect, groupid, (err, result)=> {
         res.send(result)
     })   
 })
+
+app.get('/api/get/values/:groupid', (req, res)=>{
+    const groupid = req.params.groupid
+    const sqlSelect = "SELECT X.ID, X.DATE, X.Value_close FROM stocks_value X WHERE X.ID = ?"
+    db.query(sqlSelect, groupid, (err, result)=> {
+        res.send(result)
+    })   
+})
+
+app.get('/api/get/dev/list', (req, res)=>{
+    const sqlSelect = "SELECT DISTINCT GROUP_ID FROM STOCKS_QUANTITY WHERE GROUP_ID IN ('IBOV' , 'ICON', 'IBXL', 'IVBX') ORDER BY GROUP_ID"
+    db.query(sqlSelect,  (err, result)=> {
+        res.send(result)
+    })   
+})
+
+app.get('/api/get/dev/news', (req, res)=>{
+    const sqlSelect = "SELECT * FROM News"
+    db.query(sqlSelect,  (err, result)=> {
+        res.send(result)
+    })   
+})
+
+app.get('/api/get/dev/news/content/:id', (req, res)=>{
+    const id = req.params.id
+    const sqlSelect = "SELECT * FROM News_content where id_news = ?"
+    db.query(sqlSelect, id, (err, result)=> {
+        res.send(result)
+    })   
+})
+
+
+
 
 app.post('/api/insert', (req,res) =>{
     const movieName = req.body.movieName

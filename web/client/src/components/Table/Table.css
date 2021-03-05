@@ -1,0 +1,33 @@
+
+.table {
+    display:inline-block;
+    color: #FFF;
+    border-collapse: collapse;
+    margin: 20px 20px 20px 20px;
+    
+  }
+  
+  
+  .table th, td {
+    border: 1px solid white;
+    padding: 5px;
+    width: 60%;
+  }
+  
+  
+  .table th{
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    
+  }
+  
+  .table td{
+    width: 10%;
+    text-align: left;
+    background-color: rgba(255,255,255,0.3);
+  }
+  
+  .mainTable {
+    width:80%;
+  }
+  

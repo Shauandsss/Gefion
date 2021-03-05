@@ -1,0 +1,9 @@
+.Index {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+}
+.Index--option{
+    background-color: rgba(0, 0, 0, 0.48);
+}
