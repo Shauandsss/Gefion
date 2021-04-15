@@ -1,18 +1,15 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable import/no-anonymous-default-export */
-import React, {Component, useState, useEffect} from 'react';
-import { Bar, Line, Pie } from 'react-chartjs-2';
+import React, { useState, useEffect} from 'react';
+import {  Line } from 'react-chartjs-2';
 import './Chart.css'
-import { format } from 'date-fns'
 import moment from 'moment'
 
 export default props => {
     const[chartDataBase, setChartDataBase] = useState([{}])
     const[minData, setMinData] = useState()
     const[maxData, setMaxData] = useState(new Date())
-    const[minValue, setMaxValue] = useState(0)
-    const[maxValue, setMinValue] = useState(0)
-    //const[minScale, setMinScale] = useState(0)
-    //const[maxScale, SetMaxScale] = useState(0)
 
     var select = document.getElementById('Index') 
     let x = select === null ? null : select.addEventListener("change", dataSet);
@@ -32,7 +29,7 @@ export default props => {
         date_1_Year.addEventListener("click", function(){dateTime(365);}, false);
         date_Entire.addEventListener("click", function(){dateTime(50000);}, false);    
 
-    }, [])
+    }, [dataSet])
 
     function dataSet(){
         console.log("Data Set")

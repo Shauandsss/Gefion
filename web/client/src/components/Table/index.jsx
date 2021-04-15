@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable array-callback-return */
 /* eslint-disable import/no-anonymous-default-export */
 import React, {useState, useEffect} from 'react'
 import './Table.css'
@@ -10,7 +12,7 @@ export default props => {
         select.addEventListener("change", dataSet);
         setChartDataBase(props.data)
         dataSet();
-    }, [])
+    }, [dataSet, props.data])
 
     function dataSet(){
         var searchTerm = document.getElementById('Index').value;

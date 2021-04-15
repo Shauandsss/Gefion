@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
-
 .News {
     margin-top: 100px;
     font-family: 'Roboto', 'sans-serif';
@@ -57,4 +54,23 @@
     display: inline-flex;
     margin-top: 30px;
     width: 100%;
+    
+}
+
+.Name--CreditsText {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.Name--CreditsImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px white solid;
+    margin-left: 10px;
 }

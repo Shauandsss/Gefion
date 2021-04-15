@@ -1,7 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React, {useState, useEffect} from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { parseISO, isAfter } from 'date-fns';
+import { format } from 'date-fns'
 
 import './News--Page.css'
 import Api from '../../api'
@@ -19,7 +18,7 @@ export default ({Id, Title, Subtitle, Content, Img, DatePost, WhoPosted}) => {
             setNewsContentApi(newsContetApi)
           }
           loadAll();
-    }, [])
+    }, [Id])
 
 
     return (
@@ -31,11 +30,14 @@ export default ({Id, Title, Subtitle, Content, Img, DatePost, WhoPosted}) => {
             </div>
             
             <div className='News--Credits'>
-                <div>{format(DatePost)}</div>
-                <div>{WhoPosted}</div>
+                <img className='Name--CreditsImage' src='https://exame.com/wp-content/uploads/2021/02/Elon-Musk-1.jpg' alt='author'/>
+                <div className='Name--CreditsText'>
+                    <div>{WhoPosted}</div>
+                    <div>{format(new Date(DatePost) , 'dd/MM/yyyy')}</div>
+                </div>
             </div>
             <div class="line"></div>
-            <img className='News--Img' src={Img} alt='Image'/>
+            <img className='News--Img' src={Img} alt='Image_News'/>
             
             {newsContent.length !== undefined && newsContent.map((val)=> {
                 return (<>

@@ -18,7 +18,7 @@ export default props => {
             <select className={props.className} name="Index" id="Index">
             {listFunds.length >= 0 && listFunds.map((val)=> {
                 return (
-                <option className="Index--option" key={val.GROUP_ID}>{val.GROUP_ID}</option>
+                <option value={val.GROUP_ID} className="Index--option" key={val.GROUP_ID}>{val.GROUP_ID}</option>
                )
             })}
             </select>

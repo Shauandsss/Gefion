@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React, {useState, useEffect} from 'react';
 import './News--Top.css'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export default props => {
 

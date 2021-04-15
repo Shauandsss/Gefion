@@ -12,6 +12,7 @@ import LoadCircle from './components/LoadCircle'
 import News from './components/News'
 import Footer from './components/Footer'
 import NewsPage from './components/News--Page'
+import Finance from './components/Finance'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -20,7 +21,6 @@ export default () => {
   const [Funds, setFunds] = useState({})
   const [blackHeader, setBlackHeader] = useState(false)
   const [newsList, setNewsList] = useState({})
-  const [newsContent, setNewsContent] = useState({})
 
 
   useEffect (() => {
@@ -77,7 +77,7 @@ export default () => {
         {newsList.length !== undefined && <Route exact path="/News" render={(props) => <News data={newsList} {...props} /> } />}
 
 
-        {/* Fim News */}
+        
 
         {newsList.length !== undefined && newsList.map((val)=> {
           return (
@@ -90,6 +90,9 @@ export default () => {
                 DatePost={val.Date_Post} 
                 WhoPosted={val.Who_Post} {...props} /> } />)
         })}
+        {/* Fim News */}
+
+        <Finance></Finance>
 
         <Route path="*" render={(props) => <Footer {...props} /> } />
         

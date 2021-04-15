@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from 'react';
 import './Footer.css'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
 
@@ -24,4 +24,3 @@ export default () => {
         </footer>
     )
 }
-// https://api.whatsapp.com/send?phone=554998284379
