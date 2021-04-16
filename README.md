@@ -1,16 +1,14 @@
-# Kruskal JS Solver
+# Gefion
+Project made with React, data extraction with Python and MySql.
 
-A React native app, for solve Kruskal.
+Some financial content, like news:
+![image](https://user-images.githubusercontent.com/51674001/114846590-b35d7f80-9d91-11eb-81ae-4987c4812314.png)
 
-![image](https://user-images.githubusercontent.com/51674001/114841282-83f84400-9d8c-11eb-8464-d24437c41ef5.png)
+Content:
+![image](https://user-images.githubusercontent.com/51674001/114846683-c5d7b900-9d91-11eb-89dd-9fc4b3e4a6f4.png)
 
+And some data extracted with python, using chart Js to show (extracted from Brazilian stock market):
+![image](https://user-images.githubusercontent.com/51674001/114846535-a80a5400-9d91-11eb-9ff7-41781652373d.png)
 
-
-Needing some updgrades, probably next upgrade (not sorted): 
-
-- Explain how a Kruskal works in a better way;
-- Make nodes and edges inputable;
-- Black/Light Theme;
-- Responsive page;
-
-Link: https://Shauandsss.github.io/KruskalJs
+Everydate come from the database, nothing is hardcoded, news, author news, data for the indexes.
+>>>>>>> a7549757f25cbe58171faec3980a1e78f41f0d10
