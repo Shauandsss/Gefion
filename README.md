@@ -11,4 +11,3 @@ And some data extracted with python, using chart Js to show (extracted from Braz
 ![image](https://user-images.githubusercontent.com/51674001/114846535-a80a5400-9d91-11eb-9ff7-41781652373d.png)
 
 Everydate come from the database, nothing is hardcoded, news, author news, data for the indexes.
->>>>>>> a7549757f25cbe58171faec3980a1e78f41f0d10
